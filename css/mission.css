@@ -1,0 +1,213 @@
+@charset "UTF-8";
+/*-----------------------------
+
+PC用スタイル
+
+-----------------------------*/
+
+@media screen and (min-width: 768px) {
+/*	メインヴィジュアル　*/
+	#mission-main {
+		height: 496px;
+		width: 100%;
+		background-image: url("../img/mission/mission-main.png");
+		background-repeat: no-repeat;
+		background-position-y: center;
+	}
+	
+	#mission-title {
+		background-color: #2710d5;
+		width: 368px;
+		color: #ffffff;
+		height: 496px;
+		border-radius: 0 248px 248px 0;
+		position: relative;
+	}
+	
+	#mission-title > h1 {
+		position: absolute;
+		top: 0;
+		left: 100px;
+		font-size: 80px;
+	}
+	#mission-title > span {
+		position: absolute;
+		top: 150px;
+		left: 100px;
+		font-size: 26px;
+	}
+	#mission-title > div {
+		position: absolute;
+		top: 350px;
+		left: 100px;
+		font-size: 16px;
+	}
+	
+/*	ミッション　S2DGs　*/
+	#mission-s2bgs {
+		width: 100%;
+		margin: 20px;
+	}
+	
+	.mission-h2 {
+		color: #2710d5;
+		font-size: 40px;
+	}
+	
+	.mission-h2::after {
+		content: none;
+	}
+	
+/*	ミッション　5goals　*/
+	#mission-5goals {
+		margin: 20px;
+		display: flex;
+	}
+	
+	#mission-5goals > div {
+		flex-grow: 1;
+		padding: 20px;
+	}
+	
+	#mission-5goals > div > div {
+		margin-bottom: 40px;
+	}
+	
+	.fivegoals-image-right {
+		float: right;
+		margin: 20px;
+	}
+	
+	.fivegoals-image-left {
+		float: left;
+		margin: 20px;
+	}
+	
+	.fivegoals-number {
+		color: #2710d5;
+		font-size: 48px;
+	}
+	
+	.fivegoals-h3 {
+		font-size: 28px;
+		margin: 0;
+	}
+	
+	.fivegoals-p {
+		margin: 0;
+	}
+
+}
+
+/*-----------------------------
+
+SP用スタイル
+
+-----------------------------*/
+
+@media screen and (max-width: 767px) {
+	body {
+		min-width: 375px;
+		margin: 0;
+	}
+	
+	#mission-main {
+		height: 256px;
+		width: 100%;
+		background-image: url("../img/mission/mission-main.png");
+		background-repeat: no-repeat;
+		background-position-y: center;
+		background-size: auto 208px;
+	}
+	
+	#mission-title {
+		background-color: #2710d5;
+		width: 136px;
+		color: #ffffff;
+		height: 256px;
+		border-radius: 0 248px 248px 0;
+		position: relative;
+	}
+	
+	#mission-title > h1 {
+		position: absolute;
+		top: 0;
+		left: 20px;
+		font-size: 40px;
+	}
+	
+	#mission-title > span {
+		position: absolute;
+		top: 110px;
+		left: 20px;
+		font-size: 18px;
+	}
+	
+	#mission-title > div {
+		position: absolute;
+		top: 180px;
+		left: 20px;
+		font-size: 13px;
+	}
+	
+/*-------------------------	S2DGs -------------------------*/
+	#mission-s2bgs {
+		margin: 20px;
+	}
+	
+/*	見出し　*/
+	.mission-h2 {
+		color: #2710d5;
+		font-size: 38px;
+	}
+/*	見出し擬似要素　*/
+	.mission-h2::after {
+		content: none;
+	}
+	
+/*	画像 */
+	#mission-s2bgs > img {
+		width: 100%;
+	}
+	
+/*-------------------------	5Goals -------------------------*/
+	#mission-5goals {
+		margin: 20px;
+	}
+	
+	#mission-5goals > div > div {
+		margin: 40px;
+	}
+	
+	#s2dgs-images {
+		width: 100%;
+	}
+	
+/*	PCコンテンツ表示される画像　*/
+	.fivegoals-image-right {
+		margin: 20px auto;
+		display: block;
+	}
+	.fivegoals-image-left {
+		margin: 20px auto;
+		display: block;
+	}
+	
+/*	コンテンツの番号　*/
+	.fivegoals-number {
+		color: #2710D5;
+		font-size: 48px;
+		margin: 0;
+	}
+	
+/*	コンテンツ見出し　*/
+	.fivegoals-h3 {
+		font-size: 28px;
+		margin: 0;
+	}
+	
+/*	コンテンツ説明文　*/
+	.fivegoals-p {
+		margin: 0;
+	}
+}
